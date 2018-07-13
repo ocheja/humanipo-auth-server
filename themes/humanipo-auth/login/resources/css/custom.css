@@ -1,0 +1,120 @@
+.section--light-bg {
+    background: url('../img/login-bg1.jpg')
+}
+
+/*input#kc-login {
+    background: #20345f;
+}
+
+input#kc-login:hover {
+    background: #203450;
+}
+
+
+.authorization__form .textfield.focus, .authorization__form .textfield.hover,
+.authorization__form .textfield:focus, .authorization__form .textfield:hover {
+    border-color: #20345f;
+}
+
+.checkbox input[type=checkbox]:checked ~ i {
+    background-color:#20345f;
+    border-color: #20345f;
+}*/
+
+div#kc-content-wrapper{
+    min-height: 100vh;
+}
+
+.authorization {
+    min-height: inherit;
+    padding: inherit;
+}
+
+#kc-registration {
+    width: 100%;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 60px;
+    position: relative;
+    border-top: none;
+    font-size: 1.6rem;
+}
+
+.authorization__form {
+    border: none;
+    max-width: 420px;
+    background: inherit;
+    color: #fff;
+    padding: 40px 20px 0 20px;
+}
+
+.login-pf-signup {
+    padding: 0 50px;
+}
+
+.site-logo>img {
+    margin-top: 30px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+.lrf-block__bg {
+    z-index: -1;
+    margin-top: -220px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/login-bg1.jpg) top center no-repeat, #000;
+}
+
+.reg-logo>img {
+    margin-top: -60px;
+}
+
+@media only screen and (min-width: 560px){
+    .authorization .site-logo {
+        margin-bottom: 0px;
+    }
+
+    .reg-logo>img {
+        margin-top: -40px;
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 360px){
+    .reg-logo>img {
+        margin-top: -40px;
+    }
+}
+
+    .authorization .site-logo {
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+.eye {
+}
+.eye-right {
+    margin: 123px 20px 0px 90px;
+    position: absolute;
+    clear: both;
+    z-index: -1;
+}
+.eye-left {
+    position: absolute;
+    clear: both;
+    z-index: -1;
+    margin-right: 90px;
+    margin-left: 20px;
+    margin-top: 123px;
+}
+
+#kc-content-wrapper {
+    position: relative;
+}
