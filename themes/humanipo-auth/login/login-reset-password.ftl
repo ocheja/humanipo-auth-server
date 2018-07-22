@@ -16,30 +16,41 @@
     						</a>
         <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <div class="${properties.kcFormGroupClass!}">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
-                </div>
+                <div class="input-wrp">
+                    <div class="${properties.kcLabelWrapperClass!}">
+                                        <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
+                                    </div>
+
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="username" name="username" tabindex="1" class="textfield ${properties.kcInputClass!}" autofocus/>
-                </div>
+                                    <input type="text" id="username" placeholder="Email Address" name="username" tabindex="1" class="textfield ${properties.kcInputClass!}" autofocus/>
+                                </div>
+                                    </div>
+
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}">${msg("backToLogin")?no_esc}</a></span>
-                    </div>
-                </div>
 
+                <div class="input-wrp">
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input tabindex="4" class="custom-btn custom-btn--medium custom-btn--style-2 wide ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+                                    <input tabindex="4" class="custom-btn custom-btn--medium custom-btn--style-2 wide ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+
+                                                </div>
                 </div>
+                <div class="input-wrp">
+                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                                    <div class="${properties.kcFormOptionsWrapperClass!}">
+                                        <span><a href="${url.loginUrl}">${msg("backToLogin")?no_esc}</a></span>
+                                    </div>
+                                </div>
+                                                </div>
             </div>
         </form>
         </div>
       </div>
     </div>
     <#elseif section = "info" >
+        <div style="max-width:500px;margin:auto;text-align:center">
         ${msg("emailInstruction")}
+        </div>
     </#if>
 </@layout.registrationLayout>
