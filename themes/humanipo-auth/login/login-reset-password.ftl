@@ -2,8 +2,7 @@
 <@layout.registrationLayout displayInfo=true; section>
     <#if section = "form">
     <div id="kc-form">
-          <div id="kc-form-wrapper" <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
-            <#if realm.password>
+          <div id="kc-form-wrapper">
             <div class="grid grid--container">
     					<div class="authorization authorization--login">
     						<a class="site-logo" href="https://humanipo.io">
@@ -21,7 +20,7 @@
                     <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus/>
+                    <input type="text" id="username" name="username" tabindex="1" class="textfield ${properties.kcInputClass!}" autofocus/>
                 </div>
             </div>
 
@@ -33,7 +32,7 @@
                 </div>
 
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+                    <input tabindex="4" class="custom-btn custom-btn--medium custom-btn--style-2 wide ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
                 </div>
             </div>
         </form>
