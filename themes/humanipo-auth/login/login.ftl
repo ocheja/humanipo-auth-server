@@ -57,13 +57,11 @@
 								<input tabindex="4" class="custom-btn custom-btn--medium custom-btn--style-2 wide" name="login" id="kc-login" value="${msg("doLogIn")}" type="submit" role="button"/>
 							</p>
 							<#if realm.password && social.providers??>
-                                        <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
-                                            <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                                                 <#list social.providers as p>
-                                                    <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span>${p.displayName}</span></a></li>
+                                                    <p class="text-center">
+                                                        <a tabindex="4" href="${p.loginUrl}" class="custom-btn ${p.alias} custom-btn--medium custom-btn--style-2 wide" name="${p.alias}" id="${p.providerId}"><i class="fontello fontello-gplus"></i>  ${p.displayName}</a>
+                                                    </p>
                                                 </#list>
-                                            </ul>
-                                        </div>
                                     </#if>
 
 						</form>

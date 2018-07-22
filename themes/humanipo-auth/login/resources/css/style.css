@@ -9200,3 +9200,15 @@ label {
         display: inherit;
     }
 }
+
+.google {
+    background-color: #ff4a35!important;
+}
+
+.facebook {
+    background-color: #3b5998!important;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
