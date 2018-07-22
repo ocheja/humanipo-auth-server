@@ -14,10 +14,10 @@
                                 </div>
     							<img class="img-responsive" width="150" height="42" src="${url.resourcesPath}/img/human2.png" alt="humanipo">
     						</a>
-        <form id="kc-reset-password-form" class="authorization__form" action="${url.loginAction}" method="post" style="margin-top:50px">
+        <form id="kc-reset-password-form" class="authorization__form" action="${url.loginAction}" method="post" style="margin-top:30px">
             <div class="${properties.kcFormGroupClass!}">
             <div class="input-wrp text--center">
-            <p class="text--center" style="max-width:500px;margin:auto;">Enter your username or email address and we will send you instructions on how to create a new password.</p>
+            <p class="text--center">Enter your username or email address and we will send you instructions on how to create a new password.</p>
             </div>
                 <div class="input-wrp">
                 <div class="${properties.kcInputWrapperClass!}">
@@ -48,8 +48,6 @@
       </div>
     </div>
     <#elseif section = "info" >
-        <div style="max-width:500px;margin:auto;text-align:center">
-        ${msg("emailInstruction")}
-        </div>
+
     </#if>
 </@layout.registrationLayout>
