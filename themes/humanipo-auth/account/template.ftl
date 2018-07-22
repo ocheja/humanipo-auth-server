@@ -21,12 +21,12 @@
 </head>
 <body class="admin-console user ${bodyClass}">
         
-    <header class="navbar navbar-default navbar-pf navbar-main header">
+    <header class="navbar navbar-default navbar-pf navbar-main header" style="background:#203062;">
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
                 <div class="container">
-                    <h1 class="navbar-title">
-                        <img src="${url.resourcesPath}/img/logo.png" style="max-width:120px"/>
+                    <h1 class="navbar-title" style="text-indent:unset;">
+                        <a href="https://accounts.humanipo.io"><img src="${url.resourcesPath}/img/logo.png" style="max-width:120px"/></a>
                     </h1>
                 </div>
             </div>
