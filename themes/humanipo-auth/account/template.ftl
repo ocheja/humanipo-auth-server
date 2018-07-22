@@ -25,7 +25,9 @@
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
                 <div class="container">
-                    <h1 class="navbar-title">HumanIPO Auth</h1>
+                    <h1 class="navbar-title">
+                        <img src="${url.resourcesPath}/img/logo.png" style="max-width:120px"/>
+                    </h1>
                 </div>
             </div>
             <div class="navbar-collapse navbar-collapse-1">
