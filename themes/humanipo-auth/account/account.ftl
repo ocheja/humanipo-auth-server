@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="col-sm-10 col-md-10">
-                        <span type="text" class="form-control" id="blockchainAddress" name="blockchainAddress" autofocus>${(account.blockchainAddress!'')}</span>
+                        <span type="text" class="form-control" id="blockchainAddress" name="blockchainAddress" autofocus>${(account.attributes.blockchainAddress!'')}</span>
                             </div>
                         </div>
 
