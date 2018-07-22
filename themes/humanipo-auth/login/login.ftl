@@ -7,7 +7,7 @@
         <#if realm.password>
         <div class="grid grid--container">
 					<div class="authorization authorization--login">
-						<a class="site-logo" href="index.html">
+						<a class="site-logo" href="https://humanipo.io">
                             <div class="eye eye-right">
                                 <img src="${url.resourcesPath}/img/eye.gif">
                             </div>
@@ -59,7 +59,7 @@
 							<#if realm.password && social.providers??>
                                                 <#list social.providers as p>
                                                     <p class="text-center">
-                                                        <a tabindex="4" href="${p.loginUrl}" class="custom-btn ${p.alias} custom-btn--medium custom-btn--style-2 wide" name="${p.alias}" id="${p.providerId}"><i class="fontello fontello-gplus"></i>  ${p.displayName}</a>
+                                                        <a tabindex="4" href="${p.loginUrl}" class="custom-btn ${p.alias} custom-btn--medium custom-btn--style-2 wide" name="${p.alias}" id="${p.providerId}"><i class="pull-left fontello fontello-gplus"></i>  ${p.displayName}</a>
                                                     </p>
                                                 </#list>
                                     </#if>
