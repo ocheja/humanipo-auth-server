@@ -26,7 +26,7 @@
             <div class="navbar-header">
                 <div class="container">
                     <h1 class="navbar-title" style="text-indent:unset;">
-                        <a href="https://accounts.humanipo.io"><img src="${url.resourcesPath}/img/logo.png" style="max-width:120px"/></a>
+                        <a href="https://account.humanipo.io"><img src="${url.resourcesPath}/img/logo.png" style="max-width:120px"/></a>
                     </h1>
                 </div>
             </div>
