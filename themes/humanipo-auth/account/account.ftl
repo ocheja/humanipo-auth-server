@@ -32,7 +32,8 @@
             </div>
 
             <div class="col-sm-10 col-md-10">
-                <span type="text" class="form-control" id="email" name="email" autofocus>${(account.email!'')}</span>
+                <span type="text" class="form-control" autofocus>${(account.email!'')}</span>
+                <input type="hidden" class="form-control" id="email" name="email" value="${(account.email!'')}"/>
             </div>
         </div>
 
@@ -45,7 +46,6 @@
                 <input type="text" class="form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
             </div>
         </div>
-
         <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
             <div class="col-sm-2 col-md-2">
                 <label for="lastName" class="control-label">${msg("lastName")}</label> <span class="required">*</span>
@@ -55,6 +55,16 @@
                 <input type="text" class="form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
             </div>
         </div>
+
+        <div class="form-group ${messagesPerField.printIfExists('blockchainAddress','has-error')}">
+                            <div class="col-sm-2 col-md-2">
+                                <label for="blockchainAddress" class="control-label">Blockchain Address</label> <span class="required">*</span>
+                            </div>
+
+                            <div class="col-sm-10 col-md-10">
+                        <span type="text" class="form-control" id="blockchainAddress" name="blockchainAddress" autofocus>${(account.blockchainAddress!'')}</span>
+                            </div>
+                        </div>
 
         <div class="form-group">
             <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
