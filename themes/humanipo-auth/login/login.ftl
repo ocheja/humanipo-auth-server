@@ -59,7 +59,7 @@
 							<#if realm.password && social.providers??>
                                                 <#list social.providers as p>
                                                     <p class="text-center">
-                                                        <a tabindex="4" href="${p.loginUrl}" class="custom-btn ${p.alias} custom-btn--medium custom-btn--style-2 wide" name="${p.alias}" id="${p.providerId}"><i class="pull-left fontello fontello-gplus"></i>  ${p.displayName}</a>
+                                                        <a tabindex="4" href="${p.loginUrl}" class="custom-btn ${p.alias} custom-btn--medium custom-btn--style-2 wide" name="${p.alias}" id="${p.providerId}"><i class="pull-left fontello fontello-${p.alias}"></i>  ${p.displayName}</a>
                                                     </p>
                                                 </#list>
                                     </#if>
