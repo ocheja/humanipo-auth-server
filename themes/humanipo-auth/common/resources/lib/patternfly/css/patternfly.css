@@ -10199,7 +10199,7 @@ h6 .label {
   margin-left: 5px;
 }
 .navbar-pf {
-  background: #030303;
+  background: #203062;
   border: 0;
   border-radius: 0;
   border-top: 3px solid #199dde;
@@ -10505,9 +10505,9 @@ h6 .label {
   }
   .navbar-pf .navbar-primary {
     font-size: 14px;
-    background-image: -webkit-linear-gradient(top, #1d1d1d 0%, #030303 100%);
-    background-image: -o-linear-gradient(top, #1d1d1d 0%, #030303 100%);
-    background-image: linear-gradient(to bottom, #1d1d1d 0%, #030303 100%);
+    background-image: -webkit-linear-gradient(top, #1d1d1d 0%, #203062 100%);
+    background-image: -o-linear-gradient(top, #1d1d1d 0%, #203062 100%);
+    background-image: linear-gradient(to bottom, #1d1d1d 0%, #203062 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1d1d1d', endColorstr='#ff030303', GradientType=0);
   }
