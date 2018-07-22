@@ -9212,3 +9212,10 @@ label {
 .linkedin {
     background-color: #0e76a8;
 }
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
