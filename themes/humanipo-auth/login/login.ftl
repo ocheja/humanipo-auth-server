@@ -8,13 +8,13 @@
         <div class="grid grid--container">
 					<div class="authorization authorization--login">
 						<a class="site-logo" href="https://humanipo.io">
-                            <div class="eye eye-right">
+                            <#--<div class="eye eye-right">
                                 <img src="${url.resourcesPath}/img/eye.gif">
                             </div>
                             <div class="eye eye-left">
                                 <img src="${url.resourcesPath}/img/eye.gif">
-                            </div>
-							<img class="img-responsive" width="150" height="42" src="${url.resourcesPath}/img/human2.png" alt="humanipo">
+                            </div>-->
+							<img class="img-responsive" width="640" src="${url.resourcesPath}/img/humanipo-logo-face_1_wt.png" alt="humanipo">
 						</a>
 						<form id="kc-form-login" class="authorization__form" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
 							<h3 class="__title">Sign In</h3>
