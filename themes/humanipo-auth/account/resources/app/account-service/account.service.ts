@@ -54,8 +54,8 @@ export class AccountServiceClient {
     }
     
     private handleAccountUpdated(responseHandler: Function, res: Response, successMessage?: string) {
-        let message: string = "Your account has been updatedmmmmmm.";
-        //if (successMessage) message = successMessage;
+        let message: string = "Your account has been updated.";
+        if (successMessage) message = successMessage;
         this.notifier.emit(new ToastNotification(message, "success"));
         responseHandler(res);
     } 
